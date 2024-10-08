@@ -1,4 +1,4 @@
-namespace CafeteriaApp.Models.Entities;
+namespace CafeteriaApp.Domain;
 
 public class Venda
 {
