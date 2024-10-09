@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "09MYqq5hnlM=",
+  "dgSpecHash": "M1UuOlYqzyQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rforb\\cafeteria-system\\src\\cafeteria-system\\CafeteriaApp\\CafeteriaApp.csproj",
+  "projectFilePath": "C:\\Users\\rforb\\RiderProjects\\cafeteria-system\\src\\CafeteriaApp\\CafeteriaApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rforb\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0-rc.2.24474.1\\microsoft.entityframeworkcore.9.0.0-rc.2.24474.1.nupkg.sha512",
     "C:\\Users\\rforb\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0-rc.2.24474.1\\microsoft.entityframeworkcore.abstractions.9.0.0-rc.2.24474.1.nupkg.sha512",
