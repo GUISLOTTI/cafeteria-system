@@ -5,6 +5,10 @@ namespace CafeteriaApp.Services;
 public class ClienteService
 {
     private readonly AppDbContext _context;
+    public List<Cliente> ObterTodosClientes()
+    {
+        return _context.Clientes.ToList();
+    }
 
     public ClienteService(AppDbContext context)
     {

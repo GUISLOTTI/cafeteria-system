@@ -27,7 +27,7 @@ public class Program
             Console.WriteLine("Cliente adicionado com sucesso!");
 
             // Listando todos os clientes
-            var clientes = clienteService.ObterClientePorId();
+            var clientes = clienteService.ObterTodosClientes();
             Console.WriteLine("Clientes cadastrados:");
             foreach (var cliente in clientes)
             {
