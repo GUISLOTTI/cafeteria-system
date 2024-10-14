@@ -1,38 +1,16 @@
-using CafeteriaApp.Domain;
-using CafeteriaApp.Services;
-
-namespace CafeteriaApp;
-
 using System;
-using System.Linq;
+using System.Windows.Forms;
 
-public class Program
+namespace CafeteriaApp
 {
-    public static void Main(string[] args)
+    internal static class Program
     {
-        using (var context = new AppDbContext())
+        [STAThread]
+        static void Main()
         {
-            // Criação do serviço
-            var clienteService = new ClienteService(context);
-
-            // Adicionando um novo cliente
-            var novoCliente = new Cliente
-            {
-                Nome = "João da Silva",
-                Telefone = "1234-5678",
-                SaldoDevedor = 0m
-            };
-
-            clienteService.AdicionarCliente(novoCliente);
-            Console.WriteLine("Cliente adicionado com sucesso!");
-
-            // Listando todos os clientes
-            var clientes = clienteService.ObterTodosClientes();
-            Console.WriteLine("Clientes cadastrados:");
-            foreach (var cliente in clientes)
-            {
-                Console.WriteLine($"ID: {cliente.Id}, Nome: {cliente.Nome}, Telefone: {cliente.Telefone}, Saldo Devedor: {cliente.SaldoDevedor}");
-            }
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
     }
 }
