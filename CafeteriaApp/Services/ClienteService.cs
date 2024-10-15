@@ -12,7 +12,7 @@ public class ClienteService
         _context = context;
     }
     
-    public async Task<List<Cliente?>> ObterTodosClientes()
+    public async Task<List<Cliente?>> ObterTodosClientes(int i)
     {
         return await _context.Clientes.ToListAsync();
     }

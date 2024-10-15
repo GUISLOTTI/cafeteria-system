@@ -14,13 +14,14 @@ namespace CafeteriaApp.Services
         {
             _context = context;
         }
+        
 
         public async Task<List<Produto>> ObterTodosProdutos()
         {
             return await _context.Produtos.ToListAsync();
         }
 
-        public async Task<Produto?> ObterProdutoPorId(int id)
+        public async Task<Produto> ObterProdutoPorId(int id)
         {
             return await _context.Produtos.FindAsync(id);
         }
